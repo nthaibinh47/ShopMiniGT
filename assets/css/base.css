@@ -6,7 +6,7 @@
     --text-color: #333;
     --border-color: #dbdbdb;
     --star-gold-color: #ffce3e;
-    --black-color: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0px, rgb(76, 76, 76) 64%);
+    --dark-color: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0px, rgb(76, 76, 76) 64%);
 
 
     --header-height: 120px;
@@ -141,7 +141,7 @@ html {
 
 .btn.btn--primary {
     color: var(--white-color);
-    background-color: var(--main-color);
+    background-color: var(--primary-color);
 }
 
 .btn.btn--disable {
@@ -162,6 +162,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: auto;
 }
 
 .select_input-lable {
@@ -199,7 +200,7 @@ html {
 }
 
 .select_input-link:hover {
-    color: var(--main-color);
+    background-color: #e0e0e0;
 }
 
 .select_input:hover .select_input-list {
@@ -227,27 +228,60 @@ html {
 
 
 .home_pagination-item {
+    margin: 0 4px;
+}
+
+.home_pagination-next{
     margin: 0 12px;
 }
 
 .home_pagination-item-active .home_pagination-item-link {
     color: var(--white-color);
-    background-color: var(--main-color);
+    background-color: var(--black-color);
 }
 
-.home_pagination-item-active .home_pagination-item-link:hover {
-    background-color: #b8263e;
+.home_pagination-item-dont .home_pagination-item-link{
+    border: 1px solid #929292;
+}
+
+.home_pagination-item-dont .home_pagination-item-next{
+    border: 1px solid #929292;
+}
+
+.home_pagination-item-dont .home_pagination-item-next:hover{
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+.home_pagination-item-dont .home_pagination-item-link:hover {
+    color: var(--white-color);
+    background-color: var(--black-color);
 }
 
 .home_pagination-item-link {
     display: block;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 20px;
-    color: #939393;
-    min-width: 40px;
-    height: 30px;
-    line-height: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #454749;
+    min-width: 38px;
+    height: 38px;
+    line-height: 38px;
     text-align: center;
-    border-radius: 3px;
+    border-radius: 2px;
+    letter-spacing: 0.5px;
+}
+
+.home_pagination-item-next{
+    min-width: 70px;
+    height: 38px;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    color: #454749;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 2px;
+    letter-spacing: 0.5px;
 }
